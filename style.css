@@ -1,0 +1,235 @@
+html {
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  background-color: aliceblue;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+#box-calculator {
+  background-color: rgb(46, 46, 46);
+  height: auto;
+  width: 80%;
+  margin: 10% auto;
+  padding: 1em;
+  overflow: hidden;
+  transform: translateY(0%);
+  border-radius: 0.7em;
+}
+
+.button {
+  cursor: pointer;
+  font-size: xx-large;
+  border:0px;
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  border-radius: 100%;
+  background-color: antiquewhite;
+}
+
+
+.display {
+  height: 10vh;
+  padding: 15px;
+  background-color: rgb(255, 243, 224);
+  border-radius: 0.3em;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.display span{
+  height: 100%;
+  width: 100%;
+  line-height: normal;
+}
+
+
+.button span {
+  margin: auto;
+}
+
+.row:nth-child(1) {
+  height: 5vh;
+  line-height: normal;
+  justify-content: center;
+  color: aliceblue;
+  flex: 1;
+}
+
+.row:nth-child(2) .display {
+  flex: 1;
+}
+
+.row:nth-child(3) .button,
+#bagi,
+#pangkat,
+#kali,
+#tambah,
+#kurangi,
+#mod,
+#kurung,
+#plusmin,
+#samadengan,
+#koma {
+  background-color: rgb(255, 160, 72);
+}
+
+.row:nth-child(3) {
+  margin-top: 20px;
+}
+.row:nth-child(3) #clear {
+  order: 1;
+}
+
+.row:nth-child(3) #delete {
+  order: 2;
+}
+
+.row:nth-child(4) #kurung {
+  order: 1;
+}
+
+.row:nth-child(4) #mod {
+  order: 2;
+}
+
+.row:nth-child(4) #pangkat {
+  order: 3;
+}
+
+.row:nth-child(4) #bagi {
+  order: 4;
+}
+
+.row:nth-child(4) #satu {
+  order: 5;
+}
+
+.row:nth-child(4) #dua {
+  order: 6;
+}
+
+.row:nth-child(4) #tiga {
+  order: 7;
+}
+
+.row:nth-child(4) #kali {
+  order: 8;
+}
+
+.row:nth-child(4) #empat {
+  order: 9;
+}
+
+.row:nth-child(4) #lima {
+  order: 10;
+}
+
+.row:nth-child(4) #enam {
+  order: 11;
+}
+
+.row:nth-child(4) #tambah {
+  order: 12;
+}
+
+.row:nth-child(4) #tujuh {
+  order: 13;
+}
+
+.row:nth-child(4) #delapan {
+  order: 14;
+}
+
+.row:nth-child(4) #sembilan {
+  order: 15;
+}
+
+.row:nth-child(4) #kurangi {
+  order: 16;
+}
+
+.row:nth-child(4) #nol {
+  order: 17;
+}
+
+.row:nth-child(4) #plusmin {
+  order: 18;
+}
+
+.row:nth-child(4) #koma {
+  order: 19;
+}
+
+.row:nth-child(4) #samadengan {
+  order: 20;
+}
+.row:nth-child(5) {
+  justify-content: center;
+  margin-top: 0.8em;
+}
+.row:nth-child(5) p {
+  line-height: normal;
+  font-size: .3em;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.row:nth-child(5) a {
+  color: aliceblue;
+  padding: 0px 2px;
+}
+
+
+@media (min-width: 578px) {
+  html{
+    overflow-y: hidden;
+  }
+  #box-calculator {
+    height: auto;
+    width: 50%;
+    margin: 30vh auto;
+    transform: translateY(-23vh);
+  }
+}
+
+@media (min-width: 768px) {
+  html{
+    overflow-y: hidden;
+  }
+  #box-calculator {
+    height: auto;
+    width: 40%;
+    margin:50vh auto;
+    transform: translateY(-40vh);
+  }
+}
+
+
+@media (min-width: 1200px) {
+  html{
+    overflow-y: hidden;
+  }
+  #box-calculator {
+    height: auto;
+    width: 20%;
+    margin:50vh auto;
+    transform: translateY(-40vh);
+  }
+}
